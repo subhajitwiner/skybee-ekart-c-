@@ -1,0 +1,33 @@
+﻿form{
+    margin:0px 0px 10px 0px;
+    padding-left:10px;
+    padding-left:10px;
+    width:100%;
+}
+form table{
+    margin:0px;
+    padding:0px;
+    position:relative;
+    float:left;
+}
+form table tr td label{
+    width:210px;
+    height:150px;
+    text-align:center;
+    font-style:italic;
+    font-weight:800;
+    text-shadow:10px 5px 4px 2px #343232;
+} 
+form table tr td img {
+    width: 210px;
+    height: 150px;
+}
+form table tr td input[type=submit]{
+    width:210px;
+    height:30px;
+}
+form table tr td select{
+    width:210px;
+    height:30px;
+    text-align:center;
+}

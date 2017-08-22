@@ -1,0 +1,39 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+aside{
+    margin:0px;
+    padding-top:20px;
+    padding-bottom:30px;
+    padding-left:20px;
+}
+aside  input{
+    text-align:center;
+    width:200px;
+    height:25px;
+    border-radius:20px 20px 20px 20px;
+    margin-bottom:5px;
+}
+aside input[type=file]{
+    text-align:center;
+    border-radius:15px 20px 15px 20px;
+    width:408px;
+}
+aside textarea{
+    width:408px;
+    height:50px;
+    margin-bottom:5px;
+    border-radius:30px 20px 30px 20px;
+    text-align:center;
+}
+    aside img {
+        margin-top:20px;
+        height: 274px;
+        width: 650px;
+}
+aside section{
+    margin-left:40px;
+    position:relative;
+    float:left;
+}

@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="structure2.master.cs" Inherits="structure2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="StyleSheet/master2.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+     <header>
+            <img src="logo/SkyBee.png" />
+            <h1>SkyBee</h1>
+            <form id="form1" runat="server">
+                <img src="<% Response.Write(Session["prof_pic"].ToString()); %>" style="width:150px; height:88px; margin-top:5px;margin-bottom:5px; margin-right:19px; margin-right:10px;" />
+               <label id="fname" runat="server" ></label>
+               <label id="uname" runat="server"><% Response.Write(Session["fname"].ToString()+" "+Session["lname"].ToString()); %></label>
+            </form>
+                
+        </header>
+        <nav>
+            <ul>
+                <li><input type="button" value="Home" runat="server" /></li>
+                <li><input type="button" value="Catagori" runat="server" />
+                    <ul>
+                        <li>
+                            <input type="button" value="By Brand" runat="server" /></li>
+                        <li>
+                            <input type="button" value="By Rating" runat="server" /></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <div>
+            <asp:ContentPlaceHolder id="body" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    
+</body>
+</html>
